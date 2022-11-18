@@ -32,6 +32,8 @@ def index():
 def move():
     request.get_data()
     logger.info(request.json)
+    record = json.loads(request.data)
+    print(record)
     ###########################################################################
     # TODO add your implementation here to replace the random response
 #     if(i%2==0):
