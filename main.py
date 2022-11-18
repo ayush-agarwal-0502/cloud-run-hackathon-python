@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 moves = ['F', 'T', 'L', 'R']
-moves2 = ['T', 'L', 'R']
+moves2 = ['T', 'L', 'R','T','T']
 @app.route("/", methods=['GET'])
 def index():
     return "Let the battle begin!"
