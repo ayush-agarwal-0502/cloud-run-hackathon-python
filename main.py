@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 moves = ['F', 'T', 'L', 'R']
-moves2 = ['F','T', 'L', 'R','T','T']
+moves2 = ['F','T', 'L', 'R', 'T', 'T']
 @app.route("/", methods=['GET'])
 def index():
     return "Let the battle begin!"
@@ -33,6 +33,7 @@ def move():
     request.get_data()
     logger.info(request.json)
     record = json.loads(request.data)
+    return moves2[random.randrange(len(moves2))]
 #     print(record)
     ###########################################################################
     # TODO add your implementation here to replace the random response
@@ -42,7 +43,7 @@ def move():
 #     else:
 #         i = i+1
 #         return moves[1]
-    return moves2[random.randrange(len(moves2))]
+#     return moves2[random.randrange(len(moves2))]
     ############################################################################
 
 if __name__ == "__main__":
