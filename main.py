@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 moves = ['F', 'T', 'L', 'R']
-
+moves2 = ['T', 'L', 'R']
 @app.route("/", methods=['GET'])
 def index():
     return "Let the battle begin!"
@@ -40,7 +40,7 @@ def move():
 #     else:
 #         i = i+1
 #         return moves[1]
-    return moves[random.randrange(len(moves))]
+    return moves2[random.randrange(len(moves2))]
     ############################################################################
 
 if __name__ == "__main__":
