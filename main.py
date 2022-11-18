@@ -40,8 +40,10 @@ def move():
     ###########################################################################
     # TODO add your implementation here to replace the random response
     if(i%2==0):
+        i = i+1
         return moves[random.randrange(len(moves))]
     else:
+        i = i+1
         return moves[1]
     # return moves[random.randrange(len(moves))]
     ############################################################################
