@@ -28,14 +28,23 @@ moves = ['F', 'T', 'L', 'R']
 def index():
     return "Let the battle begin!"
 
+#############################################
+i=0
+#############################################
+
+
 @app.route("/", methods=['POST'])
 def move():
     request.get_data()
     logger.info(request.json)
-    
+    ###########################################################################
     # TODO add your implementation here to replace the random response
-    
-    return moves[random.randrange(len(moves))]
+    if(i%2==0):
+        return moves[random.randrange(len(moves))]
+    else:
+        return moves[1]
+    # return moves[random.randrange(len(moves))]
+    ############################################################################
 
 if __name__ == "__main__":
   app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
