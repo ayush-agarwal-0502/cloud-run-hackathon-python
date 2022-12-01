@@ -1,6 +1,8 @@
 Cloud Bowl Sample - Python
 ---------------------------------
 
+Skills : Cloud , Microservice 
+
 Participated in Google India Cloud hackathon run . Secured 16th rank across India (shown in picture below) . Learnt to deploy a microservice over Google Cloud . This repository contains my work on the event . 
 
 ![image](https://user-images.githubusercontent.com/86561124/205038345-8e3b918c-51b2-4e8e-8423-4f484eccb1f3.png)
